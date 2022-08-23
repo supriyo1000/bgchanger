@@ -1,0 +1,133 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 20px 100px;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            text-decoration: underline;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            margin: 0px auto;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 18px;
+        }
+
+        .btn {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border: 2px solid grey;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        #white {
+            background-color: white;
+        }
+
+        #violet {
+            background-color: rgb(145, 31, 145);
+        }
+
+        #aqua {
+            background-color: aqua;
+        }
+
+        #black {
+            background-color: black;
+        }
+        #switcher{
+            text-align: right;
+            padding: 30px 0px 0px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="switcher">
+        <span class="btn" id="white" onclick="change('#FFFFFF')"></span>
+        <span class="btn" id="violet" onclick="change('#EE82EE')"></span>
+        <span class="btn" id="aqua" onclick="change('#00FFFF')"></span>
+        <span class="btn" id="black" onclick="change('#000000')"></span>
+    </div>
+    <div id="container">
+        <h1 class="text">About Us</h1>
+        <img src="1.jpg" alt="">
+        <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim minima cum alias hic expedita fugit quaerat
+            voluptatem porro totam! Nihil sapiente commodi hic reiciendis optio harum perferendis minus quibusdam
+            consectetur enim ex, perspiciatis officia aliquam unde voluptas dolore voluptate. Exercitationem
+            voluptatibus placeat delectus est aliquam architecto dolores velit, nam iure quibusdam? Quos reiciendis quam
+            labore voluptate ad dolore porro delectus eaque amet qui nisi, neque, hic ipsa provident aspernatur nihil
+            obcaecati eius tempora, possimus omnis consectetur accusamus! Illum quidem eum repellendus aspernatur
+            nesciunt deserunt repudiandae. Iure earum ex maxime nemo est necessitatibus beatae recusandae deserunt
+            veniam commodi, asperiores amet omnis, fugit impedit non aliquid obcaecati unde accusamus accusantium
+            dolorum at autem quasi id aspernatur. Eligendi temporibus voluptatum ab laudantium error ad, ratione beatae
+            quae minus quis facere quia. Molestiae est delectus recusandae eveniet dolorem placeat, veritatis quam quis
+            corrupti sint nesciunt eum ullam ex reiciendis ut modi excepturi illum at voluptatibus? Culpa voluptatem
+            veritatis fuga suscipit architecto. Alias architecto magnam libero, officia harum omnis vitae eos aliquid,
+            nam ut, porro nemo commodi perferendis nostrum ullam quam? Tempore rerum repudiandae fugit. A corrupti
+            soluta vero neque molestias aliquid debitis adipisci impedit asperiores reprehenderit maiores quis, laborum
+            nemo repellendus ullam quos dolorum voluptas fugiat, iste itaque, animi quasi velit consequuntur. Aliquam,
+            nihil? Voluptatem esse praesentium quos consequuntur, nisi repellat, ipsam impedit nostrum quia numquam
+            blanditiis culpa unde rerum, sequi veniam. Impedit ipsam vel, totam, dolores, recusandae quisquam suscipit
+            laboriosam nobis ea accusamus quae voluptatibus repellendus iusto aliquid nam doloribus officiis illo omnis
+            dicta! Laboriosam, nemo inventore dolor magnam, alias explicabo natus asperiores mollitia distinctio nostrum
+            repellat quis ad atque amet? Tenetur aut minima molestiae magni labore? Iure quod possimus natus nostrum
+            vero veniam. Blanditiis et explicabo vel quam assumenda possimus consequuntur sed doloribus, repellat
+            officiis minus deleniti aperiam earum culpa magnam cum fugiat quas placeat quo incidunt! Numquam
+            consequuntur non ipsa quam! Modi sunt, obcaecati veniam minus mollitia nihil facere earum. Enim nisi iure
+            necessitatibus saepe non cupiditate! Architecto aspernatur iusto quibusdam et consequuntur magnam aliquam
+            blanditiis ipsam labore corrupti eaque cupiditate, reiciendis temporibus animi, neque vel porro praesentium
+            nemo possimus voluptatum harum, soluta delectus error. Aut reiciendis, unde itaque voluptatem ratione nemo
+            ea repellendus consequuntur, provident magnam sed illo laborum in minima sit est recusandae officia. Unde
+            sunt tenetur eaque iste ducimus. Corporis, similique soluta nulla delectus assumenda asperiores. Fugit vel
+            consequatur illum ab assumenda, mollitia harum. Quia, incidunt ea alias neque officiis culpa ipsum eius
+            reiciendis quasi aspernatur error nesciunt labore molestias earum! Distinctio facere officiis nesciunt,
+            laudantium molestias consequatur veniam mollitia ratione quasi consequuntur molestiae velit laboriosam earum
+            tenetur, aut, dolore tempora temporibus laborum soluta nihil odit quibusdam quam! Facilis asperiores illum
+            exercitationem veritatis aperiam animi inventore culpa labore soluta eaque. Dolorem dolor molestiae, fugit
+            in fugiat earum quidem perferendis quia, molestias sint dolores ipsam sapiente repellat nisi. Voluptates
+            voluptatibus commodi, odio illum sapiente praesentium provident quaerat aliquid. Omnis, officiis accusamus,
+            reiciendis voluptas, nisi sunt eos quod eum ex neque voluptatem nesciunt? Illo repellendus adipisci
+            reiciendis unde veniam nobis?
+
+        </p>
+    
+    </div>
+    <script>
+        function change(color){
+            document.body.style.backgroundColor = color;
+            let text = document.getElementsByClassName("text");
+
+            if(color== '#000000'){
+                for(let y of text){
+                    y.style.color= "white";
+                }
+            }
+            else{
+                for(let y of text){
+                    y.style.color= "black";
+            }
+        }
+    }
+    </script>
+</body>
+
+</html>
